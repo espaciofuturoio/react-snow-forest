@@ -1,15 +1,18 @@
 import { Box } from "@/components/gluestack-ui/box";
-import { useLocalSearchParams } from "expo-router";
+import { Icon, RepeatIcon } from "@/components/gluestack-ui/icon";
+import { useState } from "react";
+import { TouchableOpacity } from "react-native";
 import { SkiaSnowForest } from "./skia_snow_forest/canvas";
 
 const Canvas = () => {
-  const { lang = "en" } = useLocalSearchParams<{ lang?: string }>();
-
-  console.log("lang", lang);
-
+  const [key, setKey] = useState(0);
   return (
     <Box className="flex-1" tabIndex={0}>
-      <SkiaSnowForest />
+      <SkiaSnowForest key={key}>
+        <TouchableOpacity className="p-4" onPress={() => setKey(key + 1)}>
+          <Icon as={RepeatIcon} size="xl" color="white" />
+        </TouchableOpacity>
+      </SkiaSnowForest>
     </Box>
   );
 };

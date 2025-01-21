@@ -48,14 +48,14 @@ const SkiaSnowForestCanvas = ({ children }: { children?: React.ReactNode }) => {
   );
 };
 
-export const SkiaSnowForest = () => {
+export const SkiaSnowForest = ({
+  children,
+}: { children?: React.ReactNode }) => {
   return (
     <>
       <SvgSnowForestRender />
       <SkiaSnowForestCanvas>
-        <SkiaOverlay>
-          <Text>.</Text>
-        </SkiaOverlay>
+        <SkiaOverlay>{children}</SkiaOverlay>
       </SkiaSnowForestCanvas>
     </>
   );

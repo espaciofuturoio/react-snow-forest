@@ -15,12 +15,8 @@ export const LoadingIndicator = () => (
 const styles = StyleSheet.create({
   loadingContainer: {
     flex: 1,
+    backgroundColor: "black",
     justifyContent: "center",
     alignItems: "center",
-  },
-  loadingText: {
-    color: "#333",
-    fontSize: 20,
-    fontWeight: "bold",
   },
 });
