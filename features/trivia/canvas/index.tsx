@@ -1,6 +1,6 @@
 import { Box } from "@/components/gluestack-ui/box";
-import { Text } from "@/components/gluestack-ui/text";
 import { useLocalSearchParams } from "expo-router";
+import { SkiaSnowForest } from "./skia_snow_forest/canvas";
 
 const Canvas = () => {
   const { lang = "en" } = useLocalSearchParams<{ lang?: string }>();
@@ -9,7 +9,7 @@ const Canvas = () => {
 
   return (
     <Box className="flex-1" tabIndex={0}>
-      <Text>Hello</Text>
+      <SkiaSnowForest />
     </Box>
   );
 };

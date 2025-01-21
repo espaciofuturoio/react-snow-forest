@@ -65,6 +65,7 @@
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "@shopify/react-native-skia": "1.5.0",
+    "@types/matter-js": "^0.19.8",
     "babel-plugin-module-resolver": "^5.0.2",
     "babel-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",
     "colyseus.js": "^0.15.26",
@@ -83,6 +84,7 @@
     "expo-system-ui": "~4.0.7",
     "expo-web-browser": "~14.0.2",
     "install": "^0.13.0",
+    "matter-js": "^0.20.0",
     "nativewind": "^4.1.23",
     "react": "18.3.1",
     "react-compiler-runtime": "^19.0.0-beta-e552027-20250112",
@@ -96,6 +98,7 @@
     "react-native-svg": "15.8.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
+    "react-use": "^17.6.0",
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
